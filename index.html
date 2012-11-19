@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/ko.js"></script>
+		<script type="text/javascript" src="js/Container.js"></script>
+		<script type="text/javascript" src="js/ControlModel.js"></script>
+		<script type="text/javascript" src="js/EventEmitter.js"></script>
+		<script type="text/javascript" src="js/DragListener.js"></script>
+		<script type="text/javascript" src="js/Gradient.js"></script>
+		<script type="text/javascript" src="js/AreaSelector.js"></script>
+		<script type="text/javascript" src="js/MandelbrotSetVisualiser.js"></script>
+		<script type="text/javascript" src="js/MandelbrotSetComponent.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link type="text/css" rel="stylesheet" media="screen" href="css/screen.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="vis"></div>
+			<div class="controls">
+				<button class="zoom" data-bind="click:zoomIntoMandelbrotSet">zoom</button>
+				<button class="reset" data-bind="click:reset">reset</button>
+				<button data-bind="click:redraw">redraw</button>
+				<div class="info">
+					<fieldset class="areaSelector">
+						<legend>Area Selector</legend>
+						<dl>
+							<dd>X:</dd>
+							<dt data-bind="text:AreaSelectorX"></dt>
+							<dd>Y:</dd>
+							<dt data-bind="text:AreaSelectorY"></dt>
+							<dd>Width:</dd>
+							<dt data-bind="text:AreaSelectorWidth"></dt>
+							<dd>Height:</dd>
+							<dt data-bind="text:AreaSelectorHeight"></dt>
+						</dl>
+					</fieldset>
+					<fieldset class="mandelbrotSet">
+						<legend>Mandelbrot Set</legend>
+						<dl>
+							<dd>Start X:</dd>
+							<dt data-bind="text:relX"></dt>
+							<dd>Start Y:</dd>
+							<dt data-bind="text:relX"></dt>
+							<dd>Zoom:</dd>
+							<dt data-bind="text:zoom"></dt>
+						</dl>
+					</fieldset>
+					<fieldset class="settings">
+						<legend>Settings</legend>
+						<dl>
+							<dd>Iterations:</dd>
+							<dt><input type="text" data-bind="value: maxIterations" /></dt>
+						</dl>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

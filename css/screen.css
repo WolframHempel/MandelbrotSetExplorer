@@ -1,0 +1,92 @@
+*{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+#wrapper{
+	position: absolute;
+	left: 50%;
+	margin-left:-400px;
+	margin-top:20px;
+
+	width: 800px;
+	display: block;
+}
+
+canvas{
+	box-shadow: 1px 1px 10px rgba( 0, 0, 0, 0.6 );
+}
+
+div.handle{
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	width: 100px;
+	height: 100px;
+	border: 1px dashed orange;
+	cursor: move;
+	z-index: 2;
+	background: rgba( 255,255,255,.2);
+}
+
+div.handle div{
+	width: 12px;
+	height: 12px;
+	bottom: -1px;
+	right: -1px;
+	z-index: 4;
+	cursor: nw-resize;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFBJREFUeNqM0LENgEAMQ1HHE0LBNFzJKlQMaeKGDsWRouhLrzgdJGHac0OGdCNDfUH8zNpL19H3QbmZoB4xQW4myM0EfW+ckLv8BRNyvwIMACFDf4KA8LJyAAAAAElFTkSuQmCC);
+	position: absolute;
+}
+
+.controls{
+	margin-top:10px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	background: #eee;
+}
+
+.controls button{
+	margin-right: 10px;
+	padding: 3px;
+
+}
+.info{
+	overflow: hidden;
+	clear: both;
+}
+.controls fieldset{
+	border: 1px solid #ccc;
+	padding: 5px;
+	font: 11px arial,sans-serif;
+	float: left;
+	margin-right: 10px;
+	width: 150px;
+}
+
+
+.controls fieldset.mandelbrotSet{
+	width: 220px;
+}
+.controls fieldset.settings{
+	width: 200px;
+}
+
+.controls fieldset dd{
+	float: left;
+	width: 80px;
+	font-weight: bold;
+	margin-right: 10px;
+	clear: left;
+}
+.controls fieldset dt{
+	float: left;
+}
+.controls fieldset input[type=text]{
+	width: 80px;
+}
+.controls fieldset legend{
+	padding: 0 10px;
+}
