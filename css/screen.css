@@ -2,6 +2,7 @@
 	margin:0;
 	padding:0;
 	list-style-type: none;
+	font: 11px arial,sans-serif;
 }
 
 #wrapper{
@@ -14,6 +15,15 @@
 	display: block;
 }
 
+#blogLink{
+	color: #444;
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+}
+#blogLink a{
+	color: ##0da4d3;
+}
 canvas{
 	box-shadow: 1px 1px 10px rgba( 0, 0, 0, 0.6 );
 }
